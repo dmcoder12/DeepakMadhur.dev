@@ -1,0 +1,32 @@
+[
+    { "id": "name1",
+      "rating": "5",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et ullam consequuntur accusamus sit cumque fugit dolore accusantium. Quibusdam hic dolore voluptatem mollitia.",
+      "name": "name1",
+      "company": "company1"
+       },
+    { "id": "name2",
+      "rating": "2",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et ullam consequuntur accusamus sit.",
+      "name": "name2",
+      "company": "company2"
+       },
+    { "id": "name3",
+      "rating": "4",
+      "text": "Lorem ipsum dolor sit ",
+      "name": "name3",
+      "company": "company3"
+       },
+    { "id": "name4",
+      "rating": "3",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et ullam consequuntur",
+      "name": "name4",
+      "company": "company4"
+       },
+    { "id": "name5",
+      "rating": "2",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et ullam consequuntur accusamus sit cumque fugit dolore accusantium. Quibusdam hic dolore ",
+      "name": "name5",
+      "company": "company5"
+       }
+  ]

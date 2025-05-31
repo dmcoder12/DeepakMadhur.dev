@@ -1,0 +1,35 @@
+.NavbarWrapper {
+    overflow: scroll;
+    height: 70vh;
+}
+
+.NavBar li a {
+    color: var(--headingColor);
+    font-weight: 500;
+}
+
+.NavBar li a:hover {
+    color: var(--accentColor2);
+}
+
+.MainLogo {
+    width: 350px;
+    filter: drop-shadow(3px 3px 5px var(--darktertiaryColor));
+}
+
+.LogoText {
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px 10px var(--darktertiaryColor);
+}
+
+/* Contact Button css here */
+
+.ContactButton {
+    color: var(--primaryColor);
+}
+
+.ContactButton:hover {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}

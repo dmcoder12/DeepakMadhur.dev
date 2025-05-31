@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "icon": "html",
+        "heading": "HTML"
+    },
+    {
+        "id": "2",
+        "icon": "css",
+        "heading": "CSS"
+    },
+    {
+        "id": "3",
+        "icon": "javascript",
+        "heading": "JavaScript"
+    },
+    {
+        "id": "4",
+        "icon": "react",
+        "heading": "React"
+    },
+    {
+        "id": "5",
+        "icon": "tailwind",
+        "heading": "Tailwind CSS"
+    }, 
+    {
+        "id": "6",
+        "icon": "nodejs",
+        "heading": "Node.js"
+    },
+    {
+        "id": "7",
+        "icon": "expressjs",
+        "heading": "Express.js"
+    },
+    {
+        "id": "8",
+        "icon": "mongodb",
+        "heading": "MongoDB"
+    },
+    {
+        "id": "9",
+        "icon": "git",
+        "heading": "Git"
+    },
+    {
+        "id": "10",
+        "icon": "github",
+        "heading": "Github"
+    },
+    {
+        "id": "11",
+        "icon": "api",
+        "heading": "API Integration"
+    },
+    {
+        "id": "12",
+        "icon": "ai tools",
+        "heading": "AI Tools Integration"
+    },
+    {
+        "id": "13",
+        "icon": "web hosting",
+        "heading": "Web Hosting"
+    },
+    {
+        "id": "14",
+        "icon": "seo",
+        "heading": "Basic SEO"
+    },
+    {   
+        "id": "15",
+        "icon": "responsive",
+        "heading": "Responsive Design"
+    },
+    {   
+        "id": "16",
+        "icon": "animejs",
+        "heading": "AnimeJs"
+    }
+]

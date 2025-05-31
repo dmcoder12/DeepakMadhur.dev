@@ -1,0 +1,40 @@
+:root {
+  /* background, navbar, and footer */
+  --primaryColor: #621CF4;
+  
+  /* buttons, hyperlinks, call to action sections, icons */
+  --accentColor1: #1D20F5;
+  
+  /* headings, hover effects, secondary buttons */
+  --accentColor2: #16A5F5;
+  
+  /* text, borders, subheadings, cards, containers */
+  --secondaryColor: #EADAF2;
+  
+  /* for box shadows, etc */
+  --tertiaryColor: #bcbbbb;
+  --darktertiaryColor: #929191;
+  
+  /* dark mode background, sections with high contrast needs */
+  --backgroundAlternative: #121212;
+  --mediumlightBg: #f8effd;
+  --lightBackground: #ffffff;
+  
+  --headingColor: #282938;
+  
+  --bodyColor: #1C1E53;
+  
+  /* success messages, key stats, important highlights */
+  --highlightColor: #1D64F5;
+}
+
+/* for dark mode styles */
+.dark {
+  --primaryColor: #571ada;
+  --secondaryColor: #2b282c;
+  --tertiaryColor: #202020;
+  --darktertiaryColor: #3a3939;
+  --mediumlightBg: #242325;
+  --lightBackground: #000000;
+  --headingColor: #dee0ff;
+}
