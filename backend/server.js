@@ -13,7 +13,7 @@ const mernApp = express();
 mernApp.use(express.json());
 
 // for allowing multiple origins:
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['http://localhost:5173', 'https://deepakmadhurdev.netlify.app/'];
 mernApp.use(cors({
     origin: (origin, callback) => {
         if (!origin || allowedOrigins.includes(origin)) {
