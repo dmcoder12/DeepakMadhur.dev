@@ -29,31 +29,32 @@ mernApp.use(cors({
 
 
 mernApp.use((req, res, next) => {
-    console.log(req.path + req.method);
+    console.log(req.path + ' ' + req.method);
     next();
 })
 
 // routes
 mernApp.use('/api/form-submit', formSubmitRoutes);
 
+mernApp.get('/', (req, res) => {
+    res.send({
+        activeStatus: true,
+        error: false,
+    })
+})
+
 // connect to database
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
-        console.log("✅ Connected to Database.");
+        if (process.env.NODE_ENV !== 'serverless') {
+            mernApp.listen(process.env.PORT, () => {
+                console.log("connected to db & listening to port", process.env.PORT, "!!");
+    })} else {
+            console.log("✅ Connected to Database.");
+        }
     })
     .catch((error) => {
         console.log("❌ Database error:", error);
     });
-// .then(() => {
-
-//     // listening for requests 
-//     mernApp.listen(process.env.PORT, () => {
-//         console.log("connected to db & listening to port", process.env.PORT, "!!");
-//     })
-
-// })
-// .catch((error) => {
-//     console.log(error);
-// })
 
 module.exports = mernApp;
