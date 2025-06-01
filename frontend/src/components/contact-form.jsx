@@ -1,7 +1,7 @@
 import { ContactUs } from "./fixedcomponents/contactus-form01-component"
 import { Section02 } from "./fixedcomponents/section-type2-component"
 
-const apiUrl = import.meta.env.VITE_MERNAPP_SERVER_URL;
+const apiUrl = `${import.meta.env.VITE_MERNAPP_SERVER_URL}/api/form-submit`;
 
 export const ContactForm = () => {
 
