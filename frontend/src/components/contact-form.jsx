@@ -1,6 +1,8 @@
 import { ContactUs } from "./fixedcomponents/contactus-form01-component"
 import { Section02 } from "./fixedcomponents/section-type2-component"
 
+const apiUrl = import.meta.env.VITE_MERNAPP_SERVER_URL;
+
 export const ContactForm = () => {
 
 
@@ -11,7 +13,7 @@ export const ContactForm = () => {
             >
                 {/* Contact Section */}
                 <ContactUs
-                    apiUrl={"http://localhost:5000/api/form-submit"}
+                    apiUrl={apiUrl}
                     method={"post"}
                     mainColor={`var(--primaryColor)`}
                     fieldBgColor={`var(--mediumlightBg)`}
