@@ -7,7 +7,7 @@ const cors = require('cors');
 const formSubmitRoutes = require('./routes/formData')
 
 // express app
-const mernApp = express(); 
+const mernApp = express();
 
 // middlewares
 mernApp.use(express.json());
@@ -22,7 +22,7 @@ mernApp.use(cors({
         return callback(new Error('Not allowed by CORS'));
     },
     credentials: true
-})); 
+}));
 
 // to allow all origins in development or even in production if needed, use this:
 // mernApp.use(cors());
@@ -39,13 +39,21 @@ mernApp.use('/api/form-submit', formSubmitRoutes);
 // connect to database
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
-
-        // listening for requests 
-        mernApp.listen(process.env.PORT, () => {
-            console.log("connected to db & listening to port", process.env.PORT, "!!");
-        })
-
+        console.log("✅ Connected to Database.");
     })
     .catch((error) => {
-        console.log(error);
-    })
+        console.log("❌ Database error:", error);
+    });
+// .then(() => {
+
+//     // listening for requests 
+//     mernApp.listen(process.env.PORT, () => {
+//         console.log("connected to db & listening to port", process.env.PORT, "!!");
+//     })
+
+// })
+// .catch((error) => {
+//     console.log(error);
+// })
+
+module.exports = mernApp;
