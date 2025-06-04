@@ -45,7 +45,7 @@ Import example: import it like this or just copy-paste from here and modify & re
 
 
 
-export const Message = ({headingReqd, switchBlockQuote, switchQuotationText, switchPlainMsg, heading, source, blockQuoteOrMsg, author, quotationText, message, msgCntnrStyle="", headingStyle="", blockStyle="",authorStyle="",  quoteStyle="", msgStyle=""}) => {
+export const Message = ({ headingReqd, switchBlockQuote, switchQuotationText, switchPlainMsg, heading, source, blockQuoteOrMsg, author, quotationText, message, msgCntnrStyle = "", headingStyle = "", blockStyle = "", authorStyle = "", quoteStyle = "", msgStyle = "" }) => {
 
     return (
         <div className={`font-medium w-full flex flex-col items-center gap-5 justify-center !px-10 sm:!px-20  ${msgCntnrStyle}`}>
@@ -60,7 +60,9 @@ export const Message = ({headingReqd, switchBlockQuote, switchQuotationText, swi
 
             {/* quote: simple quote or message within quotations */}
             {switchQuotationText &&
-                <q className={`text-lg italic ${quoteStyle}`}>{quotationText}</q>
+                <q className={`text-lg italic ${quoteStyle}`}
+                    style={{ wordBreak: "break-word", hyphens: "manual" }}>{quotationText}
+                </q>
             }
 
             {/* plain message: simple message without quotations*/}
