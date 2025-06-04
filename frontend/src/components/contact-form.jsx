@@ -5,7 +5,6 @@ const apiUrl = `${import.meta.env.VITE_MERNAPP_SERVER_URL}/api/form-submit`;
 
 export const ContactForm = () => {
 
-
     return (
         <>
             <Section02 id="contact-us" sectionStyle="bg-[var(--mediumlightBg)]   !pt-10" mainHeading="Get in Touch"
